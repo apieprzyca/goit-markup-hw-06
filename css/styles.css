@@ -30,7 +30,7 @@ li {
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
-  width: 1600px;
+
   letter-spacing: 0.03em;
 }
 .icons {
@@ -204,6 +204,9 @@ h1 {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/img-background.jpg);
+  max-width: 1600px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .button {
