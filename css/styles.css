@@ -1107,11 +1107,12 @@ footer {
 .acceptance-checked {
   width: 16px;
   height: 15px;
+  border: 2.5px solid #212121;
   margin-right: 8px;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.acceptance-input:checked ~ .acceptance-checked {
+.acceptance-checked {
   border: 0 solid #212121;
 }
 
