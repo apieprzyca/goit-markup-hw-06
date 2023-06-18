@@ -35,6 +35,7 @@ body {
 }
 .icons {
   margin: 25px 100px;
+  padding: 0;
 }
 
 img {
@@ -1105,26 +1106,39 @@ footer {
 }
 
 .acceptance-checked {
-  width: 16px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   border: 2.5px solid #212121;
-  margin-right: 8px;
+  margin-right: 2px;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.acceptance-checked {
-  border: 0 solid #212121;
+.acceptance-checked:focus,
+.acceptance-checked:hover,
+.acceptance-checked:active {
+  border: none;
 }
 
-.checked-bacground {
+.checked-background {
   display: block;
   visibility: hidden;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.acceptance-input:checked ~ .acceptance-checked .checked-bacground {
-  display: block;
-  visibility: visible;
+
+.acceptance-input {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: #ffffff;
+  border: 0.2px solid #ffffff;
 }
+.acceptance-input:checked ~ .acceptance-checked {
+  visibility: hidden;
+  display: block;
+  padding-top: 0;
+}
+
 .checkbox-is-hidden {
   -moz-appearance: none;
   -webkit-appearance: none;
